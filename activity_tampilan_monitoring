@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#545b64">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_sos3"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/buttonShape3"
+        android:layout_width="391dp"
+        android:layout_height="375dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:src="@drawable/button_shape3" />
+
+        <TextView
+            android:id="@+id/titleMonitoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MONITORING"
+            android:textSize="20sp"
+            android:textColor="#140D0D"
+            android:textStyle="bold"
+            android:layout_above="@id/buttonShape3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/labelLantai1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lantai 1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#140D0D"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutLantai1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/ruang1Lantai1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/labelRuang1Lantai1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai1ruang1Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang1Lantai1"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ruang2Lantai1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/labelRuang2Lantai1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai1ruang2Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang2Lantai1"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ruang3Lantai1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/labelRuang3Lantai1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai1ruang3Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang3Lantai1"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/labelLantai2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lantai 2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#140D0D"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutLantai2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/ruang1Lantai2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/labelRuang1Lantai2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai2ruang1Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang1Lantai2"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ruang2Lantai2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/labelRuang2Lantai2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai2ruang2Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang2Lantai2"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ruang3Lantai2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/labelRuang3Lantai2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai2ruang3Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang3Lantai2"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/labelLantai3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lantai 3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#140D0D"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutLantai3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/ruang1Lantai3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/labelRuang1Lantai3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai3ruang1Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang1Lantai3"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ruang2Lantai3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/labelRuang2Lantai3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 2"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai3ruang2Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang2Lantai3"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ruang3Lantai3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/labelRuang3Lantai3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruang 3"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#140D0D"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/lantai3ruang3Suhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-- °C"
+                        android:textSize="18sp"
+                        android:textColor="#140D0D"
+                        android:layout_below="@id/labelRuang3Lantai3"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/logoIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/sos_aleart"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/logoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOS ALERT"
+                android:textSize="20sp"
+                android:textColor="#140F0F"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    </RelativeLayout>
