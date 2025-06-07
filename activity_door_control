@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoorControlActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_sos4"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/titleDoorControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Door Control"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <LinearLayout
+                android:id="@+id/doorsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/titleDoorControl">
+
+                <TextView
+                    android:text="Lantai 1"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/door1Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/door1Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Door 1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/door1StatusTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_toEndOf="@id/door1Label"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/door1ControlSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/door1SmokeIndicator"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/door1SmokeIndicator"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fire"
+                        android:contentDescription="Indikator Asap Pintu 1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/door2Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/door2Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Door 2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/door2StatusTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Close"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/door2Label"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/door2ControlSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/door2SmokeIndicator"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/door2SmokeIndicator"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fire"
+                        android:contentDescription="Indikator Asap Pintu 2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/door3Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/door3Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Door 3"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/door3StatusTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/door3Label"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/door3ControlSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/door3SmokeIndicator"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/door3SmokeIndicator"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fire"
+                        android:contentDescription="Indikator Asap Pintu 3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:text="Lantai 2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/door4Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/door4Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Door 4"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/door4StatusTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/door4Label"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/door4ControlSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/door4SmokeIndicator"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/door4SmokeIndicator"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fire"
+                        android:contentDescription="Indikator Asap Pintu 4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/door5Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/door5Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Door 5"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/door5StatusTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/door5Label"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/door5ControlSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/door5SmokeIndicator"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/door5SmokeIndicator"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fire"
+                        android:contentDescription="Indikator Asap Pintu 5"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/door6Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/door6Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Door 6"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/door6StatusTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/door6Label"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/door6ControlSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/door6SmokeIndicator"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/door6SmokeIndicator"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fire"
+                        android:contentDescription="Indikator Asap Pintu 6"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:text="Lantai 3"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/door7Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/door7Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Door 7"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/door7StatusTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_toEndOf="@id/door7Label"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/door7ControlSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/door7SmokeIndicator"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/door7SmokeIndicator"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fire"
+                        android:contentDescription="Indikator Asap Pintu 7"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/door8Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:id="@+id/door8Label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Door 8"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:id="@+id/door8StatusTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_toEndOf="@id/door8Label"
+                        android:layout_marginStart="16dp"
+                        android:layout_centerVertical="true"/>
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/door8ControlSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/door8SmokeIndicator"
+                        android:layout_marginEnd="16dp"
+                        android:layout_centerVertical="true"/>
+                    <ImageView
+                        android:id="@+id/door8SmokeIndicator"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_fire"
+                        android:contentDescription="Indikator Asap Pintu 7"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/door9Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+            <TextView
+                android:id="@+id/door9Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Door 9"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/door9StatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toEndOf="@id/door9Label"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/door9ControlSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/door9SmokeIndicator"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:id="@+id/door9SmokeIndicator"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_fire"
+                android:contentDescription="Indikator Asap Pintu 7"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="10dp"
+                android:text="Back" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
