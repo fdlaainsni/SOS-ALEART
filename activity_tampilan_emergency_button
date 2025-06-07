@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#545b64">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_sos3"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"/>
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/titleEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMERGENCY BUTTON"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp" />
+
+    <!-- Container tombol SOS -->
+    <LinearLayout
+        android:id="@+id/emergencyContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/titleEmergency"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/btnSOS1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textViewBuzzer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buzzer"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/btnSOS2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/switch_thumb"
+                app:track="@drawable/switch_track"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textViewSpeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speaker"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Logo di bawah -->
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/logoIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/sos_aleart"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/logoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS ALERT"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+</RelativeLayout>
